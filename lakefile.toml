@@ -1,0 +1,37 @@
+name = "qcsd_subexponential"
+version = "0.1.0"
+defaultTargets = ["Master_QCSD_Main"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"
+
+[[require]]
+name = "cslib"
+git = "https://github.com/leanprover/cslib"
+rev = "5b56df99362532c46e1175381fbbdd755bd56030"
+
+[[lean_lib]]
+name = "QCSD"
+
+[[lean_lib]]
+name = "QCSDProof"
+roots = [
+  "Branch1_Recovery",
+  "Branch2_Algebra",
+  "Glue_TwoLayerConv",
+  "Branch3_Network",
+  "Branch4_TMCompiler",
+  "Branch4_Phase1Dev",
+  "Branch5_PadAndSep",
+  "Branch6_EncoderMacros",
+  "Branch6b_ParseAndEdges",
+  "Branch7_EncodeNetSpec",
+  "Branch8_CircuitEmitters",
+  "Branch8b_TailCircuitsEmit",
+  "Glue_NetworkAndConv",
+  "Glue_MnetRMProg",
+  "Master_QCSD_Main",
+  "Verify",
+]
